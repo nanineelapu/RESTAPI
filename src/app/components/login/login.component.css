@@ -1,0 +1,136 @@
+#main {
+    background-image: url(/assets/loginbg.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    padding: 5vw 5vw;
+    gap: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.left {
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    line-height: 4;
+}
+
+.left h2 {
+    font-weight: 800;
+}
+
+.right {
+    padding: 10vw 6vw;
+    color: #fff;
+
+}
+
+.right h1 {
+    color: transparent;
+    font-weight: 800;
+    font-size: 8vw;
+    z-index: 1;
+    -webkit-text-stroke: 2px #19FFFC;
+}
+
+.right h2 {
+    font-size: 3vw;
+    color: #19FFFC;
+    -webkit-text-stroke: 1px #000;
+}
+
+.email {
+    display: grid;
+}
+
+.password {
+    display: grid;
+}
+
+.email input {
+    height: 2vw;
+    width: 60%;
+    background-color: transparent;
+    color: #19FFFC;
+    border: 2px solid #fff;
+    border-radius: 2vw;
+    padding: 10px;
+
+}
+
+.password input {
+    height: 2vw;
+    width: 60%;
+    background-color: transparent;
+    color: #19FFFC;
+    border: 2px solid #fff;
+    border-radius: 2vw;
+    padding: 10px;
+}
+
+.btn2 {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+
+}
+
+.iferror h6 {
+    color: red;
+    padding: 5px 5px;
+    font-size: .9vw;
+    font-weight: 400;
+}
+
+.ifpasserror h6 {
+    color: red;
+    padding: 5px 5px;
+    font-size: .9vw;
+    font-weight: 400;
+}
+
+@media (max-width : 800px) {
+    #main {
+        display: inline-block;
+        flex-direction: column;
+        padding: 3vw 4vw;
+
+    }
+
+    .right h2 {
+        font-size: 7vw;
+
+    }
+
+    .right h1 {
+        font-size: 15vw;
+    }
+
+    .email input {
+        height: 2vw;
+        width: 70%;
+
+    }
+
+    .password input {
+        height: 2vw;
+        width: 70%;
+    }
+
+
+    .left {
+        padding: 4vw 10vw;
+    }
+
+    .left h2 {
+        font-size: 10vw;
+    }
+
+    .app-buttons {
+        font-size: 100px;
+    }
+
+}

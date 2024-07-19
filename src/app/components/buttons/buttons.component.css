@@ -1,0 +1,10 @@
+.btn button {
+    border-radius: 20px;
+}
+
+@media (max-width : 800px) {
+    .btn button {
+        font-size: 3vw;
+    }
+
+}

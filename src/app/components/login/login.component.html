@@ -1,0 +1,56 @@
+<div id="main">
+  <div class="right">
+    <h2>{{ logintitle }}</h2>
+    <h1>{{ apititile }}</h1>
+  </div>
+  <div class="left">
+    <h2>Login</h2>
+    <h4>
+      Doesn't have an account yet? <span><app-buttons></app-buttons></span>
+    </h4>
+    <form [formGroup]="loginForm" method="post">
+      <div class="email">
+        <label for="email">Enter Email</label>
+        <input
+          type="text"
+          formControlName="email"
+          name="email"
+          placeholder="Email"
+        />
+        <div
+          class="iferror"
+          *ngIf="
+            loginForm.get('email')?.touched &&
+            loginForm.get('email')?.hasError('required')
+          "
+        >
+          <h6>Email is required</h6>
+        </div>
+      </div>
+      <div class="password">
+        <label for="password">Enter Password</label>
+        <input
+          type="text"
+          formControlName="password"
+          name="password "
+          placeholder="Password"
+        />
+        <div
+          class="ifpasserror"
+          *ngIf="
+            loginForm.get('password')?.touched &&
+            loginForm.get('password')?.hasError('required')
+          "
+        >
+          <h6>Password is required</h6>
+        </div>
+      </div>
+      <button type="submit" class="btn btn2" (click)="show()">Submit</button>
+    </form>
+  </div>
+  <script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+    });
+  </script>
+</div>
