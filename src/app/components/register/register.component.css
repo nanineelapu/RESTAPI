@@ -1,0 +1,135 @@
+#regmain {
+    background-image: url(/assets/loginbg.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+}
+
+.main {
+    margin: 10vw 10vw;
+    margin-left: 16vw;
+    display: flex;
+}
+
+
+
+
+.right {
+    color: #fff;
+    padding: 2vw 3vw;
+
+}
+
+.left {
+    color: #fff;
+    padding: 5vw 3vw;
+
+}
+
+.left h2 {
+    color: #19FFFC;
+    font-size: 3vw;
+    -webkit-text-stroke: 1px #000;
+    font-weight: 600;
+}
+
+.left h1 {
+    font-size: 8vw;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px #19FFFC;
+    font-weight: 800;
+}
+
+
+.right h1 {
+    font-size: 4vw;
+    color: #19FFFC;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.right .sec {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn3 {
+    background-color: #000;
+    color: #fff;
+    font-size: 1vw;
+    border-radius: 20px;
+}
+
+.right h1 {
+    font-size: 2vw;
+}
+
+.name-ip {
+    display: flex;
+    padding: 1vw 0vw;
+}
+
+
+.lastname {
+    margin-right: 75px;
+}
+
+.lastname input {
+
+    border-radius: 20px;
+    background-color: transparent;
+    color: #19FFFC;
+    border: 1px solid #fff;
+    padding: 4px;
+}
+
+.name input {
+    border-radius: 20px;
+    background-color: transparent;
+    color: #19FFFC;
+    border: 1px solid #fff;
+    padding: 4px;
+
+}
+
+.right .name1 {
+    padding-bottom: 10px;
+
+}
+
+
+.right .name1 label {
+    font-size: 1.1vw;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+.name1 input {
+    border-radius: 20px;
+    background-color: transparent;
+    color: #15D3D0;
+    border: 1px solid #fff;
+    padding: 4px;
+    width: 80%;
+}
+
+.right .btn4 {
+    width: 80%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: black;
+    color: #fff;
+    border-radius: 2vw;
+    font-size: 1.2vw;
+    padding: 5px 20px;
+}
+
+.feild h6 {
+    color: red;
+    font-size: .9vw;
+}

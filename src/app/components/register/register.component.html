@@ -1,0 +1,91 @@
+<div id="regmain">
+  <div class="main">
+    <div class="left">
+      <h2>Welcome to Register Page</h2>
+      <h1>restapi</h1>
+    </div>
+    <div class="right">
+      <h1>Register</h1>
+      <div class="sec">
+        <h5>Already have an accont?</h5>
+        <button class="btn btn3" routerLink="" routerLinkActive="active">
+          Login
+        </button>
+      </div>
+      <form action="" [formGroup]="registerForm">
+        <div class="name-ip">
+          <div class="name">
+            <label for="fname"> First Name </label>
+            <input
+              type="text"
+              name="fname"
+              placeholder=" FristName"
+              formControlName="fname
+            "
+            />
+          </div>
+          <div class="lastname">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" placeholder="Enter LastName" />
+          </div>
+        </div>
+        <div class="name1">
+          <label for="email">Email</label> <br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            formControlName="email"
+          />
+          <div
+            class="feild"
+            *ngIf="
+              registerForm.get('email')?.touched &&
+              registerForm.get('email')?.hasError('required')
+            "
+          >
+            <h6>* Please provide email</h6>
+          </div>
+        </div>
+        <div class="name1">
+          <label for="password">Password</label> <br />
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            formControlName="password"
+          />
+          <div
+            class="feild"
+            *ngIf="
+              registerForm.get('password')?.touched &&
+              registerForm.get('password')?.hasError('required')
+            "
+          >
+            <h6>Please set password</h6>
+          </div>
+        </div>
+
+        <div class="name1">
+          <label for="confimpassword">Confirm Password</label> <br />
+          <input
+            type="password"
+            name="confimpassword"
+            placeholder="Confirm Password"
+            formControlName="confimpassword"
+          />
+          <div
+            class="feild"
+            *ngIf="
+              registerForm.get('confrimpassword')?.touched &&
+              registerForm.get('confrimpassword ')?.hasError('required')
+            "
+          >
+            <h6>Confrim your password</h6>
+          </div>
+        </div>
+        <button class="btn btn4">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
