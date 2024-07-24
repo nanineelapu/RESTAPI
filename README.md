@@ -1,8 +1,12 @@
 # RESTAPI
-Angular x Spring Project - Login &amp; Register Practical webpage implementation with Front-End and Back-End
+**Angular x Spring Project** - Login &amp; Register Practical webpage implementation with Front-End and Back-End
 
+#1
+Check out the branch (**master**) in order to get the **Angular** front-end code
 
-Check out the branch (master) in order to get the Angular front-end code
+#2
+Check out the branch (**branch**) in order to get the Backend Spring boot **RESTAPI** Code 
+
 
 
 Samples of **Restful_Api** Implementation
