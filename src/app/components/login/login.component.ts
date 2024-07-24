@@ -9,6 +9,7 @@ import {
 } from '@angular/forms';
 
 import { HttpClient } from '@angular/common/http';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -18,8 +19,6 @@ import { HttpClient } from '@angular/common/http';
 export class LoginComponent {
   logintitle: string = 'Welcome to Login Pages';
   apititile: string = 'RESTAPI';
-
-  private posturl = '';
 
   loginForm = new FormGroup({
     email: new FormControl('', [
@@ -36,14 +35,12 @@ export class LoginComponent {
     ]),
   });
 
-  show() {
-    console.log(this.loginForm);
-  }
+  constructor(private userLogin: LoginService) {}
 
-  constructor(private http: HttpClient) {}
-
-  postDetails(data: any) {
-    return this.http.post(this.posturl, data);
+  postLogin(data: any) {
+    return this.userLogin.postLoginDetails(data).subscribe((result) => {
+      console.log(result);
+    });
   }
   ngOninit() {}
 }

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import {
   FormsModule,
@@ -6,6 +7,7 @@ import {
   FormControlName,
   Validators,
 } from '@angular/forms';
+import { RegisterService } from 'src/app/services/register.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -25,6 +27,13 @@ export class RegisterComponent {
       Validators.minLength(6),
     ]),
   });
-  constructor() {}
+
+  constructor(private getuser: RegisterService) {}
+  postDetails(data: any) {
+    return this.getuser.registerUser(data).subscribe((result) => {
+      console.log(result);
+    });
+  }
+
   ngOnInit() {}
 }

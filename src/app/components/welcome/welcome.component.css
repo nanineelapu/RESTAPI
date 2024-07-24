@@ -1,0 +1,37 @@
+#main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assets/welcome-image-restapi.jpg);
+    background-size: cover;
+}
+
+
+.text {
+    width: 100%;
+    height: 40%;
+    padding: 15vw 30vw;
+    text-align: center;
+}
+
+
+.text .content h3 {
+    color: #00fff7;
+    padding: 0vw 1.4vw;
+}
+
+h1 {
+    color: transparent;
+    font-weight: 800;
+
+    -webkit-text-stroke: 2px #fff;
+    text-transform: uppercase;
+    font-size: 5vw;
+}
+
+.content p {
+    color: #fff;
+}
+
+i {
+    color: #fff;
+}

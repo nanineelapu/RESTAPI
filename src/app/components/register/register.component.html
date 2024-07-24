@@ -12,30 +12,43 @@
           Login
         </button>
       </div>
-      <form action="" [formGroup]="registerForm">
+      <form
+        action=""
+        #regForm="ngForm"
+        (ngSubmit)="postDetails(regForm.value)"
+        [formGroup]="registerForm"
+        method="post"
+      >
         <div class="name-ip">
           <div class="name">
             <label for="fname"> First Name </label>
             <input
               type="text"
+              ngModel
               name="fname"
-              placeholder=" FristName"
-              formControlName="fname
-            "
+              placeholder="Enter FristName"
+              formControlName="fname"
             />
           </div>
           <div class="lastname">
             <label for="lname">Last Name</label>
-            <input type="text" name="lname" placeholder="Enter LastName" />
+            <input
+              type="text"
+              ngModel
+              name="lname"
+              placeholder="Enter LastName"
+              formControlName="lname"
+            />
           </div>
         </div>
         <div class="name1">
           <label for="email">Email</label> <br />
           <input
             type="email"
+            ngModel
             name="email"
-            placeholder="Enter Email"
             formControlName="email"
+            placeholder="Enter Email"
           />
           <div
             class="feild"
@@ -51,9 +64,10 @@
           <label for="password">Password</label> <br />
           <input
             type="password"
+            ngModel
             name="password"
-            placeholder="Enter Password"
             formControlName="password"
+            placeholder="Enter Password"
           />
           <div
             class="feild"
@@ -70,9 +84,10 @@
           <label for="confimpassword">Confirm Password</label> <br />
           <input
             type="password"
+            ngModel
             name="confimpassword"
+            formControlName="password"
             placeholder="Confirm Password"
-            formControlName="confimpassword"
           />
           <div
             class="feild"
@@ -84,8 +99,9 @@
             <h6>Confrim your password</h6>
           </div>
         </div>
-        <button class="btn btn4">Register</button>
+        <button type="submit" class="btn4">Register</button>
       </form>
     </div>
   </div>
 </div>
+<router-outlet></router-outlet>

@@ -8,12 +8,16 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
 import { RegisterComponent } from './components/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { SucessComponent } from './components/sucess/sucess.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ButtonsComponent,
     RegisterComponent,
+    SucessComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,

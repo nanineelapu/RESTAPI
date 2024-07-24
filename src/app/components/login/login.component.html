@@ -8,11 +8,16 @@
     <h4>
       Doesn't have an account yet? <span><app-buttons></app-buttons></span>
     </h4>
-    <form [formGroup]="loginForm" method="post">
+    <form
+      [formGroup]="loginForm"
+      (ngSubmit)="postLogin(loginForm.value)"
+      method="post"
+    >
       <div class="email">
         <label for="email">Enter Email</label>
         <input
           type="text"
+          ngModel
           formControlName="email"
           name="email"
           placeholder="Email"
@@ -30,7 +35,8 @@
       <div class="password">
         <label for="password">Enter Password</label>
         <input
-          type="text"
+          type="password"
+          ngmodel
           formControlName="password"
           name="password "
           placeholder="Password"
@@ -45,7 +51,7 @@
           <h6>Password is required</h6>
         </div>
       </div>
-      <button type="submit" class="btn btn2" (click)="show()">Submit</button>
+      <button type="submit" class="btn btn2">Submit</button>
     </form>
   </div>
   <!-- <script>

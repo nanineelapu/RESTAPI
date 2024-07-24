@@ -1,0 +1,46 @@
+#main {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(/assets/loginbg.jpg);
+    background-size: cover;
+
+    padding: 10vw 30vw;
+}
+
+
+.content {
+    color: #000;
+    text-align: center;
+    padding-top: 5vw;
+
+}
+
+.content h3 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 4px #ffffff;
+    text-shadow: 10px 0px 10px #51eef0;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button button {
+    color: #fff;
+    background-color: #000;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 4vw;
+}
+
+.button span {
+    font-weight: 600;
+    color: #fff;
+}

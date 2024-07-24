@@ -133,3 +133,37 @@
     color: red;
     font-size: .9vw;
 }
+
+@media (max-width: 800px) {
+    .main {
+        display: grid;
+    }
+
+    .left {
+        width: fit-content;
+        height: 10vw;
+    }
+
+    .left h2 {
+        font-size: 10vw;
+
+    }
+
+    .left h1 {
+        font-size: 15vw;
+
+    }
+
+
+
+    .right {
+        margin-bottom: 10vw
+    }
+
+    .right h1 {
+        font-size: 5vw;
+    }
+
+
+
+}
